@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AnswerCard from './components/AnswerCard'
+import StatusText from './components/StatusText'
+import './css/pressStart2p.css';
+import './css/nes.min.css';
+import './css/style.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <div id="main">
+        <div className="bubble nes-container is-rounded is-dark"> 
+            <StatusText />
+        </div>
+
+        <div className="monster">
+            馬
+        </div>
+
+        <div className="choices">
+            <AnswerCard text="COW" />
+            <AnswerCard text="HORSE" />
+            <AnswerCard text="PIG" />
+            <AnswerCard text="FROG" />
+        </div>
+    </div>
     );
   }
 }

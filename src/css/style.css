@@ -1,0 +1,39 @@
+
+html, body, #root, #app, #app>div {
+    height: 100%
+  }
+
+body {
+    background-color: #212529;
+    color: #fff;
+    height: 100%
+}
+
+#main{
+    height: 95%;
+    width: 100%;        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bubble{
+    width: 95%;
+    flex: 3;
+}
+
+.monster{
+    flex: 8;
+    font-size: 12em;
+}
+
+.choices {
+    flex: 4;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-response {
+    flex: 1;
+}
