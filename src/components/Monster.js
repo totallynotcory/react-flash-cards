@@ -9,7 +9,7 @@ class Monster extends React.Component{
     }
 
     ghostExpersion = () => {
-        const correct = this.props.answer;
+        const correct = this.props.allDone || this.props.answer;
         return correct === undefined ? "sad" : correct ? "excited" : "ko";
     }
 
