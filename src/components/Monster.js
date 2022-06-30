@@ -1,5 +1,5 @@
 import React from 'react';
-import {Ghost} from 'react-kawaii';
+import { Ghost } from 'react-kawaii';
 
 class Monster extends React.Component{
     monsterClasses = () => {
